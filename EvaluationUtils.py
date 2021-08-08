@@ -152,14 +152,7 @@ def determine_partial_circle(input_img, left, right, up, down):
         dimension = input_img.shape[1]
     minRad = int(dimension * 0.25)
     maxRad = dimension
-    circles = cv.HoughCircles(gray_crop, 				
-							  cv.HOUGH_GRADIENT, 		
-							  1, 						
-							  100, 						
-							  param1=50, 				
-							  param2=12, 					
-							  minRadius=minRad, 		
-							  maxRadius=maxRad)
+    circles = cv.HoughCircles(gray_crop,cv.HOUGH_GRADIENT, 1,  100, param1=50, param2=12, minRadius=minRad, maxRadius=maxRad)
     partial_detection = False
     if circles is not None:
         detected_circles = np.uint16(np.around(circles))
