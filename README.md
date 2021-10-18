@@ -1,6 +1,6 @@
 # ReticulocytePercentage
 
-This repository contains collaboratory notebooks to perform transfer learning on Feline Reticulocyte dataset. Also it contains the a preprocessing notebook which is used to perform the train, test, val split for Tensorflow 2.0 Object detection models and YOLO.
+This repository contains collaboratory notebooks to perform transfer learning on Feline Reticulocyte dataset. Also it contains the a preprocessing notebook which is used to perform the train, test, val split for Tensorflow 2.0 Object detection models and YOLO. This project uses object detection and instance segmentation for cell detection and counting.
 
 1.	Reticulocyte_SegmentationMask.json – Instance segmentation mask for the whole dataset.
 2.	Reticulocyte_Train.json – Instance segmentation mask for the training dataset
